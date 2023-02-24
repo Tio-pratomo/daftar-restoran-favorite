@@ -6,6 +6,6 @@ mengalami gangguan jaringan internet ataupun jaringannya mati.
 Kemudian, ada testing berupa like restoran dan unlike restoran untuk memastikan aplikasi ini berjalan dengan baik. 
 Ada integration test menggunakan jasmine dan end to end test menggunakan codecept dan puppeter.
 
-##Lisensi
+## Lisensi
 Aplikasi ini open-source jadi jika ada yang ingin menggunakannya silahkan.
 Tetapi pengguna juga tidak berhak untuk menuntut pembuat ketika terjadi kerusakan pada perangkat lunak tersebut.
