@@ -1,0 +1,119 @@
+@media screen and (max-width: 599px) {
+    .nav__link-container {
+        margin: auto 0;
+    }
+
+    .nav__link {
+        font-size: 1.375rem;
+    }
+
+    .nav__brand {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        justify-content: center;
+    }
+
+    .nav__list {
+        display: block;
+        width: 80%;
+        height: 400px;
+        background-color: #404B61;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        transform: translate(600px, 0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav__hamburger {
+        display: block;
+        width: 44px;
+        height: 44px;
+        justify-self: end;
+        margin: auto 10px auto 0;
+    }
+
+    .nav__hamburger-menu {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 0 solid transparent;
+        overflow: hidden;
+    }
+
+    .nav__hamburger-icon::before {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .nav__list--active {
+        transform: translate(0, 0);
+
+    }
+
+    .nav__item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav__item:nth-of-type(2) {
+        width: 100%;
+        margin: 0;
+        border-top: 0.2px solid #b9c0db;
+        border-bottom: 0.2px solid #b9c0db;
+    }
+
+    .nav__item--link {
+        width: 100%;
+
+    }
+
+    .explore__restaurant {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+    }
+
+    .nav__list {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+
+    .nav__item {
+
+        margin: 0;
+    }
+
+    .explore__restaurant {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+    }
+
+    .nav__list {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+
+    .nav__item {
+
+        margin: 0;
+    }
+
+
+}

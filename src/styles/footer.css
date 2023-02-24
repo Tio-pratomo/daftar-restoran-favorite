@@ -1,0 +1,21 @@
+.footer {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: #E8D620;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #212226;
+}
+
+.footer__list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer__item {
+    margin: 0.3rem 0;
+    font-size: 0.875rem;
+}

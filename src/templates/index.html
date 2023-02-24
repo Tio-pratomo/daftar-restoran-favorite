@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Resto recommendation for you" />
+
+        <meta name="theme-color" content="#f69435" />
+
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+        <link rel="manifest" href="./app.webmanifest" />
+
+        <link rel="icon" href="./favicon.png" />
+
+        <title>This's Resto</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+
+    <body>
+        <!-- skip-link -->
+        <a href="#main-content" class="skip-link">Menuju ke konten</a>
+
+        <!-- header -->
+        <header class="hero">
+            <!-- nav -->
+            <picture class="banner">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="./hero-image_4-sm.jpg"
+                    type="image/jpeg"
+                    style="width: 100vw; height: 100%; object-fit: cover; object-position: center" />
+                <source
+                    media="(max-width: 1000px)"
+                    srcset="./hero-image_4-lg.jpg"
+                    type="image/jpeg"
+                    style="width: 100vw; height: 100%; object-fit: cover; object-position: center" />
+                <img
+                    src="./hero-image_4-xl.jpg"
+                    alt="Hero Image"
+                    style="width: 100vw; height: 100%; object-fit: cover; object-position: center" />
+            </picture>
+
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__link-container">
+                        <a href="/" class="nav__link">This's Resto</a>
+                    </div>
+
+                    <div class="nav__hamburger">
+                        <button class="nav__hamburger-menu" aria-label="button menu dropdown on mobile" type="button">
+                            <span class="fa fa-bars nav__hamburger-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#/home" class="nav__item--link">Home</a></li>
+                    <li class="nav__item"><a href="#/favorite" class="nav__item--link">Favorite</a></li>
+                    <li class="nav__item">
+                        <a
+                            class="nav__item--link"
+                            href="https://www.linkedin.com/in/sulis-tio-9a3646220/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- hero content -->
+            <div class="hero__text">
+                <h1 class="hero__title">this's resto</h1>
+
+                <p class="hero__subtitle">
+                    <span class="hero__subtitle--first">rasakan</span>
+                    pengalaman yang menyenangkan saat duduk pertama kali
+                </p>
+
+                <a href="#main-content" class="hero--btn">Read More</a>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <main>
+            <div id="main-content" class="main-content__container"></div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">Copyright © 2022 - This's Resto</li>
+                <li class="footer__item">MFWDE</li>
+            </ul>
+        </footer>
+    </body>
+</html>

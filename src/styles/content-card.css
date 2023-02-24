@@ -1,0 +1,90 @@
+.explore__restaurant {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 10px;
+}
+
+
+
+.card {
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #fffcdb;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px 0 #b9c0db;
+    ;
+}
+
+.card-rating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: large;
+    background-color: #E8D620;
+    padding: 0.4rem 1.3rem;
+    z-index: 1;
+}
+
+.card-rating::before {
+    content: '\2729';
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-right: 3px;
+
+}
+
+.img-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    max-height: 600px;
+}
+
+.card-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    padding: 1.4em 2em;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.card-content-title {
+    font-weight: bold;
+    padding-bottom: 0.376em;
+}
+
+.card-content__place-name {
+    padding-bottom: 0.625rem;
+}
+
+.card-content__link {
+    display: inline-block;
+    padding: 0.625rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #373F4A;
+
+}
+
+.card-content__link:hover {
+    color: #f73029;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

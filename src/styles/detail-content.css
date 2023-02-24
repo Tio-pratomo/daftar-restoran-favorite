@@ -1,0 +1,49 @@
+.detail__resto {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.detail-resto__poster {
+    width: 100%;
+    height: 55vh;
+}
+
+.detail-resto__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.detail-resto__subtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.detail-resto__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}

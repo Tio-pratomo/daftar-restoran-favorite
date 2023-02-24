@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/*
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    color: white;
+    padding: 8px;
+    z-index: 1;
+}
+
+.skip-link:focus {
+    top: 0;
+    background-color: black;
+}

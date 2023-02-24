@@ -1,0 +1,18 @@
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-content__container {
+    margin: 2rem 10%;
+    padding: 1rem;
+}
+
+.main-content__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
