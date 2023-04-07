@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const Dotenv = require('dotenv-webpack');
+
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -81,6 +83,11 @@ module.exports = {
         }),
         new WorkboxWebpackPlugin.GenerateSW({
             swDest: './sw.bundle.js',
+        }),
+        new Dotenv({
+            path: path.resolve(__dirname, '.env'),
+            systemvars: true,
+            safe: true,
         }),
     ],
 };

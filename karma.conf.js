@@ -1,4 +1,5 @@
 // Karma configuration
+const Dotenv = require('dotenv-webpack');
 
 module.exports = function (config) {
     config.set({
@@ -22,17 +23,18 @@ module.exports = function (config) {
         },
 
         webpack: {
-            // karma watches the test entry points
-            // (you don't need to specify the entry option)
-            // webpack watches dependencies
-            // webpack configuration
             devtool: 'inline-source-map',
             mode: 'development',
+            plugins: [
+                new Dotenv({
+                    path: path.resolve(__dirname, '.env'),
+                    systemvars: true,
+                    safe: true,
+                }),
+            ],
         },
 
         webpackMiddleware: {
-            // webpack-dev-middleware configuration
-            // i. e.
             stats: 'errors-only',
         },
 
