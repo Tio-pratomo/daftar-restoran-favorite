@@ -1,6 +1,6 @@
 const CONFIG = {
-    BASE_URL: 'https://restaurant-api.dicoding.dev/',
-    BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/small/',
+    BASE_URL: process.env.BASE_URL,
+    BASE_IMAGE_URL: process.env.BASE_IMAGE_URL,
     CACHE_NAME: "this's resto",
     DATABASE_NAME: 'restaurant-catalogue-database',
     DATABASE_VERSION: 1,
